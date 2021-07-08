@@ -43,7 +43,7 @@ function reloadLocal() {
 // Creat the elements and reload the existing data as asoon as the page is ready
 $(document).ready(function () {
     
-reloadLocal() 
+// reloadLocal() 
 
 //______________________Craet and appent DOM elements______________________________
 function creatEl(){
@@ -94,7 +94,7 @@ function formStyling() {
             $(this.children[1]).removeClass("future");
             $(this.children[1]).removeClass("present");
         }
-        else if (blockHour === currentHour) {
+        else if (blockHour == currentHour) {
             $(this.children[1]).removeClass("past");
             $(this.children[1]).addClass("present");
             $(this.children[1]).removeClass("future");
@@ -113,18 +113,23 @@ formStyling();
 
 // _______adding event to the save buttons________________
 $(".saveBtn").on("click", function(event) {
+    var currentHour = moment().hour();
         event.preventDefault();
-        var saveIndex = $(this).siblings(".description").children(".textarea").attr("id");
-        workDays[saveIndex].reminder = $(this).siblings(".present").children(".textarea").val(); // only save the present and future reminders
-        workDays[saveIndex].reminder = $(this).siblings(".future").children(".textarea").val();
-        
-        console.log(saveIndex);
+        var saveIndex = parseInt($(this).siblings(".description").children(".textarea").attr("id"));
+
+        if(saveIndex>currentHour-9){
+             workDays[saveIndex].reminder = $(this).siblings(".future").children(".textarea").val();
+        }else if(saveIndex===currentHour-9) {
+             workDays[saveIndex].reminder = $(this).siblings(".present").children(".textarea").val(); // only save the present and future reminders
+        }else{
+            alert("You can't make changes to th epast events")
+        }    
         saveToLocal();
         updateThePgae();
     })
 
 
-    reloadLocal() 
+    reloadLocal() // exute the saveLocal and the update function
 
 })    
 
