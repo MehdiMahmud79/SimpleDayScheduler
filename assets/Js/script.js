@@ -122,7 +122,7 @@ $(".saveBtn").on("click", function(event) {
         }else if(saveIndex===currentHour-9) {
              workDays[saveIndex].reminder = $(this).siblings(".present").children(".textarea").val(); // only save the present and future reminders
         }else{
-            alert("You can't make changes to th epast events")
+            alert("You can't make changes to the past events")
         }    
         saveToLocal();
         updateThePgae();
