@@ -1,13 +1,15 @@
+/* Body styling */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
   background-color:rgb(255, 255, 255);
 }
-
+/* time block container styling */
 .container{
   max-width: 70%;
 }
+/* reminder block styling */
 textarea{
   background: transparent;
   border: none;
@@ -18,7 +20,7 @@ textarea{
   width: 100%;
   height: 100%;
 }
-
+/*jumbotron styling fot the top of the page*/
 .jumbotron {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -28,7 +30,7 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+/* reminder styling to wrap the text */
 .description{
   white-space: pre-wrap;
 }
@@ -55,6 +57,7 @@ textarea{
   border-top: 1px dashed #000000;
 }
 
+/* reminder style to have differnet style with past, present and future */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -69,7 +72,7 @@ textarea{
   background-color: #77dd77;
   color: black;
 }
-
+/* save reminders styling */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -79,6 +82,7 @@ textarea{
   /* padding-top: 1.75rem; */
 }
 
+/* save button hover styling */
 .fa-save:hover {
   color:red;
   font-size: 23px;
@@ -110,6 +114,7 @@ textarea{
     font-size:18px;
   }
 
+  /* responsive web criteria */
 @media (max-width:760px) {
   .row {
     white-space: pre-wrap;
