@@ -13,15 +13,20 @@ A simple calendar application that allows users to save events every hour of the
 
 An application that will run in the browser and feature dynamically updated HTML and CSS powered by JQuery. Application features polished UI and is responsive, ensuring adaptation to multiple screen sizes.
 
-The following animation demonstrates the application functionality:
 
-[Simple Day Scheduler](https://github.com/MehdiMahmud79/SimpleDayScheduler)
+## Mock-Up
 
+The following animation shows the web application's appearance and functionality:
+
+![Simple Day Scheduler App".](./assets/screen.gif)
 ## Third Party Assets:
 
 * [Momement.js](https://momentjs.com/)
 * [Font Awesome](https://fontawesome.com/)
 
+
+
+## Websites
 * The URL of the deployed application: 
 [URL to the Simple Day Scheduler App](https://mehdimahmud79.github.io/SimpleDayScheduler/)
 
