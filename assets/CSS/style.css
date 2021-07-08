@@ -1,0 +1,133 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color:rgb(255, 255, 255);
+}
+
+.container{
+  max-width: 70%;
+}
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 60px;
+  margin-bottom: 5px;
+  /* border-top: 1px solid white;; */
+}
+
+.hour {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  font-weight: 600;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: black;
+}
+
+.future {
+  background-color: #77dd77;
+  color: black;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  /* padding-top: 1.75rem; */
+}
+
+.fa-save:hover {
+  color:red;
+  font-size: 23px;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+.fa-save:active {
+  color:green;
+  font-size: 20px;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+
+  /* Footer setcion style */
+.footer {
+    margin-top:20px;
+    padding-top: 10px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color:#004740;    
+    text-align: center;
+    color:#cccccc;
+
+  }
+
+  .footer h4 {
+    font-size:18px;
+  }
+
+@media (max-width:760px) {
+  .row {
+    white-space: pre-wrap;
+    height: 110px;
+    border-top: 1px solid rgb(126, 126, 126);
+  }
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    background-color: #0088e2;
+    margin-bottom: 10px;
+    color: white;
+    /* padding-top: 1.75rem; */
+  }
+  .footer h4 {
+    font-size:12px;
+  }
+  
+}
