@@ -27,11 +27,9 @@ The following animation shows the web application's appearance and functionality
 
 
 ## Websites
-* The URL of the deployed application: 
-[URL to the Simple Day Scheduler App](https://mehdimahmud79.github.io/SimpleDayScheduler/)
+* [URL to the Simple Day Scheduler App](https://mehdimahmud79.github.io/SimpleDayScheduler/)
 
-* The URL of the GitHub repository, with a unique name and a README describing the project
-[GitHub page](https://github.com/MehdiMahmud79/SimpleDayScheduler)
+* [The URL of the GitHub repository](https://github.com/MehdiMahmud79/SimpleDayScheduler)
 
 - - -
 © 2021 Mehdi Mahmud.
