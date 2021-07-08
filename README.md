@@ -19,10 +19,13 @@ An application that will run in the browser and feature dynamically updated HTML
 The following animation shows the web application's appearance and functionality:
 
 ![Simple Day Scheduler App".](./assets/screen.gif)
+
 ## Third Party Assets:
 
 * [Momement.js](https://momentjs.com/)
+* [Jquery](https://code.jquery.com/jquery-3.4.1.min.js)
 * [Font Awesome](https://fontawesome.com/)
+* [Bootstrap cdn](https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css)
 
 
 
