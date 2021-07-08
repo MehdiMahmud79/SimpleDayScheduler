@@ -115,7 +115,9 @@ formStyling();
 $(".saveBtn").on("click", function(event) {
         event.preventDefault();
         var saveIndex = $(this).siblings(".description").children(".textarea").attr("id");
-        workDays[saveIndex].reminder = $(this).siblings(".description").children(".textarea").val();
+        workDays[saveIndex].reminder = $(this).siblings(".present").children(".textarea").val(); // only save the present and future reminders
+        workDays[saveIndex].reminder = $(this).siblings(".future").children(".textarea").val();
+        
         console.log(saveIndex);
         saveToLocal();
         updateThePgae();
