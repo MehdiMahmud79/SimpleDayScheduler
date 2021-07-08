@@ -45,7 +45,7 @@ $(document).ready(function () {
     
 reloadLocal() 
 
-//  Craet and appent DOM elements
+//______________________Craet and appent DOM elements______________________________
 function creatEl(){
     for (var i=startHour;i<=endHour;i++){
             // create row card
@@ -76,24 +76,17 @@ function creatEl(){
 
             savePlan.append(saveButton);
             hourForm.append(hourField, reminderSection, savePlan);
-    //  workDays[i-startHour].id
-
     }
-
-
-
-    saveToLocal()
-
 }
 
 function formStyling() {
-    //get current number of hours.
+
+    //___________get currenttime______
     var currentHour = moment().hour();
 
     // loop over time blocks
     $(".row").each(function () {
         var blockHour = parseInt($(this).text());
-        // console.log( blockHour, currentHour)
 
         //check if we've moved past this time
         if (blockHour < currentHour) {
@@ -114,9 +107,11 @@ function formStyling() {
     })
 }
 
+// call the following function to creat time blocks and styling them according the past, future and present
 creatEl()
 formStyling();
 
+// _______adding event to the save buttons________________
 $(".saveBtn").on("click", function(event) {
         event.preventDefault();
         var saveIndex = $(this).siblings(".description").children(".textarea").attr("id");
@@ -130,11 +125,6 @@ $(".saveBtn").on("click", function(event) {
     reloadLocal() 
 
 })    
-    //load any saved data from LocalStorage - do this for each hour created.
-    // for (var i=startHour;i<=endHour;i++){
-    //     $(`#hour${i} .description`).val(localStorage.getItem(`hour${i}`))
-
-    // }
 
 
 
