@@ -4,7 +4,7 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm a"));
 //____________________________Creats work day object___________________
 var workDays = [];
 const startHour=9;
-const endHour=24;
+const endHour=17;
 
 for (var i=startHour;i<=endHour;i++){
     var obj = {};
