@@ -20,14 +20,16 @@ The following animation shows the web application's appearance and functionality
 
 ![Simple Day Scheduler App".](./assets/screen.gif)
 
-## Third Party Assets:
+## Technologies:
 
 * [Momement.js](https://momentjs.com/)
 * [Jquery](https://code.jquery.com/jquery-3.4.1.min.js)
 * [Font Awesome](https://fontawesome.com/)
-* [Bootstrap cdn](https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css)
 
-
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## Websites
 * [URL to the Simple Day Scheduler App](https://mehdimahmud79.github.io/SimpleDayScheduler/)
